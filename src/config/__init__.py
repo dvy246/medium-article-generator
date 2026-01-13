@@ -31,4 +31,4 @@ def yaml_load(prompt_key: str):
         if prompt_key not in prompt_data:
             raise KeyError(f"Prompt key '{prompt_key}' not found in '{yaml_path}'.")
 
-        return prompt_data[prompt_key]
+        return prompt_data['prompt'][prompt_key]

@@ -14,4 +14,5 @@ arxiv_agent = Agent(
     model=mistral,
     name="arxiv_agent",
     tools=tool,
-    description=
+    role='arxiv agent',
+    instructions=dedent(""" You are a helpful research a""")
