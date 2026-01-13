@@ -17,4 +17,10 @@ dependencies = [
     "wikipedia>=1.4.0",
     "yfinance>=1.0",
     "youtube-transcript-api>=1.2.3",
+    "newspaper4k>=0.9.3.1",
+    "lxml_html_clean>=0.1.0",
+    "mistralai>=1.0.0",
+    "google-genai>=0.2.0",
+    "groq>=0.5.0",
+    "openai>=1.0.0",
 ]

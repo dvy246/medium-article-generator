@@ -33,7 +33,7 @@ step2=Step(
     description='a team dedicated for doing research over youtube'
 )
 
-paralell=Parallel(
+parallel_step=Parallel(
     step1,step2,
     name='parallel',
     description='perform search on the topic given comprehensive advanced research'
@@ -41,7 +41,7 @@ paralell=Parallel(
 
 wf=Workflow(
     id='workflow medium',
-    steps=[paralell,agent],
+    steps=[parallel_step,agent],
     description='a workflow that performs comprehensive advanced research on a given topic and generates a report based on the information gathered',
     name='workflow medium'
     

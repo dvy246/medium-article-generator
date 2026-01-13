@@ -1,15 +1,13 @@
 from src.workflow.workflow import wf
 import asyncio
 
-async def execute_workflow(message:str):
+async def execute_workflow(message: str):
     try:
-        output=await wf.aprint_response(input=message)
-
-        return print(output)
+        output = await wf.aprint_response(input=message)
+        return output
     except Exception as e:
-        return print(e)
+        print(f"Error executing workflow: {e}")
+        return None
 
-
-
-
-asyncio.run(execute_workflow('what is the impact of artificial intelligence on the economy'))
+def run_workflow(topic: str):
+    asyncio.run(execute_workflow(topic))
