@@ -7,7 +7,7 @@ from src.config.utils import model
 from agno.tools.local_file_system import LocalFileSystemTools
 
 
-medium_file=Path(__file__).parent.parent/'medium'
+medium_file=Path(__file__).parent.parent/'medium_file'
 
 medium_file.mkdir(exist_ok=True)
 

@@ -9,5 +9,5 @@ yt_team=Team(
     name='youtube_team',
     role='leader',
     model=model,
-    instructions=['you are the leader of the youtube team and your goal is to gather information from youtube and summarize it in a clear and concise manner'],
+    instructions=['you are the leader of the youtube team and your goal is to gather information from youtube and summarize it in a clear and concise manner and make sure you make a good decision to call the youtube agent'],
     add_datetime_to_context=True)
